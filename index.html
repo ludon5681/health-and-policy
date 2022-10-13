@@ -18,18 +18,18 @@
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 
         <!-- OverlayScrollbars -->
-        <link rel="stylesheet" href="OverlayScrollbars Source/OverlayScrollbars.min.css">
-        <script src="OverlayScrollbars Source/OverlayScrollbars.min.js"></script>
+        <link rel="stylesheet" href="libraries/OverlayScrollbars Source/OverlayScrollbars.min.css">
+        <script src="libraries/OverlayScrollbars Source/OverlayScrollbars.min.js"></script>
 
         <!-- Title -->
-        <title>Luca's Medical Science Blog</title>
+        <title>Health and Policy - Blog</title>
     </head>
 
     <body>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg bg-light fixed-top" style="max-height: 8vh">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><svg id="logo-35" width="40" height="31" viewBox="0 0 50 39" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M16.4992 2H37.5808L22.0816 24.9729H1L16.4992 2Z" class="ccompli1" fill="#007AFF"></path> <path d="M17.4224 27.102L11.4192 36H33.5008L49 13.0271H32.7024L23.2064 27.102H17.4224Z" class="ccustom" fill="#312ECB"></path></svg><span style="margin-left: 1vw; font-size: 1.2rem;" class="logo-text">Luca Donais</span></a>
+                <a class="navbar-brand" href="index.html"><svg id="logo-35" width="40" height="31" viewBox="0 0 50 39" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M16.4992 2H37.5808L22.0816 24.9729H1L16.4992 2Z" class="ccompli1" fill="#007AFF"></path> <path d="M17.4224 27.102L11.4192 36H33.5008L49 13.0271H32.7024L23.2064 27.102H17.4224Z" class="ccustom" fill="#312ECB"></path></svg><span style="margin-left: 1vw; font-size: 1.2rem;" class="logo-text">Health and Policy</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon" onclick="toggleSidebarDisplay()"></span>
                 </button>
@@ -58,22 +58,35 @@
             </div>
         </nav>
 
-        <div class="content row">
+        <div class="content row"> 
             <div class="col-3"></div>
-            <article class="col technology policy">
-                <div class="img-wrap">
-                    <img class="article-image rounded" src="Assets/Traffic-image.jpg" alt="An image of heavy traffic, taken from a view slightly angled downward.">
-                </div>
-                <h1 class="title" id="title1">California Bans Sales of Fossil-Fuel-Burning Cars by 2035</h1>
-                <h6 class="date">11th of November, 2022</h6>
-                <h4>Luca Donais</h4>
-                <p>Content</p>
-            </article>
+            <div class="col">
+                <article class="technology policy">
+                    <div class="img-wrap">
+                        <img class="article-image rounded" src="Assets/Traffic-image.jpg" alt="An image of heavy traffic, taken from a view slightly angled downward.">
+                    </div>
+                    <h1 class="title" id="title1">California Bans Sales of Fossil-Fuel-Burning Cars by 2035</h1>
+                    <h6 class="date">12th of November, 2022</h6>
+                    <h4>Luca Donais</h4>
+                    <p style="margin-top: 3vh;">Today, I read an article by Naveena Sadasivam in Grist Magazine titled “It’s official: California is phasing out gas-powered cars by 2035”<sup>[8]</sup>. The article was fascinating, and it brought up a number of interesting policy questions around health, climate, and other major issues in the world today. The policy is built on an executive order<sup>[4]</sup> passed by California governor Gavin Newsom. To be quite honest, as a serious piece of policy, I find the executive order and what has been built around it rather lackluster. While it is true that electric vehicles (EVs) are an important tool in combating climate change, they are not in and of themselves a solution. There are a whole raft of environmental, social, and health issues that EVs are either not equipped to address, or that they will actively worsen. <br><br>
+
+                        My biggest gripe with this policy is that the solution remains car-centric, with little recognition of the very real harms that personal automobiles cause to individuals and society. Cars are an extremely inefficient mode of transportation, both in terms of space efficiency within cities<sup>[6]</sup> and in terms of energy efficiency<sup>[11]</sup>, as compared to high-occupancy vehicles like buses and especially trains. In addition, public transportation has shown benefits in increasing social mobility<sup>[1]</sup>, increasing the general health of those who take it through increased physical activity, and thus, reducing healthcare costs to society<sup>[9]</sup>, and other benefits. In addition, public transit is also significantly safer than personal cars. Per-kilometer, you’re about 17 times more likely to die in a car than on a train, and about 100 times more likely to die in a car than on an airplane. In the US, about 80 people die in cars every day, all in service of a mode of transit that is less efficient and more dangerous than the alternatives.<sup>[10]</sup> <br><br>
+                        
+                        There are also environmental concerns around EVs that should not be dismissed. While their environmental benefit, by taking gas-powered vehicles off the road and thus removing emissions, is clear, so is their environmental detriment. The mining of the various materials needed to manufacture electric cars, particularly lithium and cobalt, is environmentally ruinous. Lithium mining alone requires vast amounts of water; one proposed mine in the United States is expected to use billions of gallons of it — 14 356 liters per minute, some of which may remain contaminated for as many as 300 years<sup>[5]</sup>. The mines also create enormous quantities of chemical waste and destroy animal habitats, all at great expense to taxpayers in the form of mining subsidies and grants.<br><br>
+                        
+                        With all this talk of environmental and urban policy, we’ve largely ignored the other major topic of this blog, which is health. The article correctly points out that there are major health benefits to reducing greenhouse gas emissions and smog in cities, which contribute significantly to various respiratory and circulatory illnesses like asthma and heart disease<sup>[8, 12]</sup>. However, there are some hidden assumptions in this assessment that I believe are worth interrogating.<br><br>
+                        
+                        Mining for cobalt, an essential component in EV production, happens mostly in the Democratic Republic of the Congo (DRC), which produces about 60% of the world’s cobalt<sup>[3]</sup>. For context, the DRC is a country with about 3% of Canada’s GDP (despite having well over twice our population), and about 0.24% of the United States’ GDP. The mining of cobalt is horrible for the environment, and almost as bad for the health of the miners. In an ironic twist, it produces significant and toxic air pollution, which can cause asthma and pneumonia, among other respiratory issues. Some particles emitted in cobalt mining are radioactive or cancer-causing, and have been known to cause cancer, vision problems, and thyroid problems<sup>[3]</sup>. It also has wider social impacts; cobalt mining in the DRC has been linked to increased violence, substance abuse, food and water insecurity, loss of communal land, farmland, and homes, mental health challenges, and other detrimental impacts.<sup>[7]</sup> While the health benefits of reducing pollution are self-evidently good things, this policy and others focused on electric vehicles simply export our health and social issues into places where people are too stricken with poverty to argue, in service of reducing the climate guilt of those who are already wealthy.<br><br>
+                        
+                        In the end, this is probably a step in the right direction. However, there are a million better ways to step in this direction, many of which are less counterproductive to the policy’s stated goals. Like building a train. I’d even settle for some buses. Please.<br><br><br>                        
+                        </p>
+                </article>
+            </div>
             <div class="col-3"></div>
         </div>
 
         <!-- jQuery -->
-        <script src="jquery-3.6.1.min.js"></script>
+        <script src="libraries/jquery-3.6.1.min.js"></script>
         <!-- Main script -->
         <script src="script.js"></script>
     </body>
