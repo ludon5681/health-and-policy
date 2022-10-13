@@ -4,5 +4,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
 $(".dropdown-item").on("click", (e) => {
 	e.preventDefault()
-	console.log(e.currentTarget.id)
+	var show = e.target.id
+	if (e.target.id !== "all") {
+		elements = $("article." + show)
+		$("article").css("display", "none")
+		elements.css("display", "block")
+	} else {
+		$("article").css("display", "block")
+	}
 })

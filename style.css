@@ -26,3 +26,6 @@
     align-content: center;
     margin-bottom: 2vh;
 }
+figcaption {
+    margin-top: 0.8vh;
+}
