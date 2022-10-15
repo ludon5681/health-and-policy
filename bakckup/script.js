@@ -4,19 +4,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
 var visible = []
 
-function refresh(show, boolCheck) {
-	$("article").css("display", "none")
+function refresh() {
 	for (const element of visible) {
 		$("article." + element).css("display", "block")
 	}
-	if (boolCheck) {
-		$("#" + show + "-check").html("&#10003")
-		$("#" + show).addClass("checked")
-	} else {
-		$("#" + show + "-check").html("")
-		$("#" + show).removeClass("checked")
-	}
-	
 }
 
 var from_all = true
@@ -44,7 +35,6 @@ $(".dropdown-item").on("click", (e) => {
 					$(this).children("a").eq(0).removeClass("checked")
 				}
 			})
-			visible = []
 
 			allCheck.html("&#10003")
 			all.addClass("checked")
@@ -57,21 +47,21 @@ $(".dropdown-item").on("click", (e) => {
 			allCheck.html("")
 			all.removeClass("checked")
 			
-			visible.push(show)
-			refresh(show, true)
+			$("article." + show).css("display", "block")
+			$("#" + show + "-check").html("&#10003")
+			$("#" + show).addClass("checked")
 		// if all is not currently checked
 		} else {
 			// if the thing that was pressed is currently checked, remove everything in that category from display
 			if ($("#" + show).hasClass("checked")) {
-				index = visible.indexOf(show)
-				if (index != -1) {
-					visible.splice(index, 1)
-					refresh(show, false)
-				}
+				$("article." + show).css("display", "none")
+				$("#" + show + "-check").html("")
+				$("#" + show).removeClass("checked")
 			// otherwise, display it
 			} else {
-				visible.push(show)
-				refresh(show, true)
+				$("article." + show).css("display", "block")
+				$("#" + show + "-check").html("&#10003")
+				$("#" + show).addClass("checked")
 			}
 			
 		}
