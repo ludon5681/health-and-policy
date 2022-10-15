@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Favicon.ico -->
-        <link rel="apple-touch-icon" sizes="180x180" href="Assets/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon-16x16.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="Assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon/favicon-16x16.png">
 
         <!-- Main styling -->
         <link rel="stylesheet" href="style.css">
@@ -43,9 +43,11 @@
                                 Sections
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" id="all" href="">All</a></li>
-                                <li><a class="dropdown-item" id="technology" href="">Technology</a></li>
-                                <li><a class="dropdown-item" id="policy" href="">Policy</a></li>
+                                <li><a class="dropdown-item checked" id="all" href="">All <span id="all-check">&#10003</span></a></li>
+                                <li><a class="dropdown-item" id="course-required" href="">Course-required <span id="course-required-check"></span></a></li>
+                                <li><a class="dropdown-item" id="technology" href="">Technology <span id="technology-check"></span></a></li>
+                                <li><a class="dropdown-item" id="policy" href="">Policy <span id="policy-check"></span></a></li>
+                                <li><a class="dropdown-item" id="research-notes" href="">Research Notes <span id="research-notes-check"></span></a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -62,7 +64,19 @@
         <div class="content row"> 
             <div class="col-3"></div>
             <div class="col">
-                <article class="technology policy">
+                <article class="technology research-notes">
+                    <div class="img-wrap">
+                        <img class="article-image rounded" src="Assets/Traffic-image.jpg" alt="An image of heavy traffic, taken from a view slightly angled downward.">
+                    </div>
+                    <h1 class="title" id="title1">Research Notes 1:<br>Basics of Pulse Oximeters</h1>
+                    <h6 class="date">15th of November, 2022</h6>
+                    <h4>Luca Donais</h4>
+                    <p style="margin-top: 3vh;">
+                    
+                    </p>
+                <hr>
+
+                <article class="technology policy course-required">
                     <div class="img-wrap">
                         <img class="article-image rounded" src="Assets/Traffic-image.jpg" alt="An image of heavy traffic, taken from a view slightly angled downward.">
                     </div>
@@ -96,12 +110,8 @@
                         Mining for cobalt, an essential component in EV production, happens mostly in the Democratic Republic of the Congo (DRC), which produces about 60% of the world’s cobalt<sup><a href="works-cited.html#3">[3]</a></sup>. For context, the DRC is a country with about 3% of Canada’s GDP (despite having well over twice our population), and about 0.24% of the United States’ GDP. The mining of cobalt is horrible for the environment, and almost as bad for the health of the miners. In an ironic twist, it produces significant and toxic air pollution, which can cause asthma and pneumonia, among other respiratory issues. Some particles emitted in cobalt mining are radioactive or cancer-causing, and have been known to cause cancer, vision problems, and thyroid problems<sup><a href="works-cited.html#3">[3]</a></sup>. It also has wider social impacts; cobalt mining in the DRC has been linked to increased violence, substance abuse, food and water insecurity, loss of communal land, farmland, and homes, mental health challenges, and other detrimental impacts.<sup><a href="works-cited.html#7">[7]</a></sup> While the health benefits of reducing pollution are self-evidently good things, this policy and others focused on electric vehicles simply export our health and social issues into places where people are too stricken with poverty to argue, in service of reducing the climate guilt of those who are already wealthy.<br><br>
                         
                         In the end, this is probably a step in the right direction. However, there are a million better ways to step in this direction, many of which are less counterproductive to the policy’s stated goals. Like building a train. I’d even settle for some buses. Please.<br>                       
-                        </p>
+                    </p>
                     <hr>
-                </article>
-
-                <article class="">
-                    
                 </article>
             </div>
             <div class="col-3"></div>
