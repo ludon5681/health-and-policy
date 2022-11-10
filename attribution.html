@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Favicon.ico -->
+        <link rel="apple-touch-icon" sizes="180x180" href="Assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Assets/favicon/favicon-16x16.png">
+
+        <!-- Main styling -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Bootstrap -->
+        <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- OverlayScrollbars -->
+        <link rel="stylesheet" href="libraries/OverlayScrollbars Source/OverlayScrollbars.min.css">
+        <script src="libraries/OverlayScrollbars Source/OverlayScrollbars.min.js"></script>
+
+        <!-- Title -->
+        <title>Health and Policy - Blog</title>
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-light fixed-top" style="max-height: 8vh">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><svg id="logo-35" width="40" height="31" viewBox="0 0 50 39" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M16.4992 2H37.5808L22.0816 24.9729H1L16.4992 2Z" class="ccompli1" fill="#007AFF"></path> <path d="M17.4224 27.102L11.4192 36H33.5008L49 13.0271H32.7024L23.2064 27.102H17.4224Z" class="ccustom" fill="#312ECB"></path></svg><span style="margin-left: 1vw; font-size: 1.2rem;" class="logo-text">Health and Policy</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" onclick="toggleSidebarDisplay()"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav" style="margin-left: auto !important">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Sections
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item checked" id="all" href="">All <span id="all-check">&#10003</span></a></li>
+                                <li><a class="dropdown-item" id="course-required" href="">Course-required <span id="course-required-check"></span></a></li>
+                                <li><a class="dropdown-item" id="technology" href="">Technology <span id="technology-check"></span></a></li>
+                                <li><a class="dropdown-item" id="policy" href="">Policy <span id="policy-check"></span></a></li>
+                                <li><a class="dropdown-item" id="research-notes" href="">Research Notes <span id="research-notes-check"></span></a></li>
+                                <li><a class="dropdown-item" id="ethics" href="">Ethics <span id="ethics-check"></span></a></li>
+                            </ul>
+                        </li>          
+                        <li class="nav-item">
+                            <a class="nav-link" href="works-cited.html">Works Cited</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="attribution.html">Attribution</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="content row">
+            <div class="col-3"></div>
+
+            <div class="col">
+                <h1>Attribution</h1>
+                <a href="https://www.flickr.com/photos/ginnerobot/5423565794">Image</a>
+                <a href="https://creativecommons.org/licenses/by-sa/2.0/">License</a><br>
+                <a href="https://www.flickr.com/photos/wwworks/3196112134">Image</a>
+                <a href="https://creativecommons.org/licenses/by/2.0/">License</a><br>
+                <a href="https://commons.wikimedia.org/wiki/File:Oxy_and_Deoxy_Hemoglobin_Near-Infrared_absorption_spectra.png">Adrian Curtin</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons
+
+            </div>
+            
+            <div class="col-3"></div>
+        </div>
+
+        <!-- jQuery -->
+        <script src="libraries/jquery-3.6.1.min.js"></script>
+        <!-- Main script -->
+        <script src="script.js"></script>
+    </body>
+</html>

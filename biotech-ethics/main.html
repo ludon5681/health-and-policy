@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Favicon.ico -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../Assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../Assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../Assets/favicon/favicon-16x16.png">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+        <!-- Main styling -->
+        <link rel="stylesheet" href="./style.css">
+
+        <!-- jQuery -->
+        <script src="../libraries/jquery-3.6.1.min.js"></script>
+
+        <!-- Jquery UI -->
+        <link rel="stylesheet" href="../libraries/jqueryUI/jquery-ui.min.css">
+        <script src="../libraries/jqueryUI/jquery-ui.min.js"></script>
+
+        <!-- OverlayScrollbars -->
+        <link rel="stylesheet" href="../libraries/OverlayScrollbars Source/OverlayScrollbars.min.css">
+        <script src="../libraries/OverlayScrollbars Source/jquery.overlayScrollbars.min.js"></script>
+
+        <title>Ethics in Biotechnology</title>
+    </head>
+    <body>
+        <div class="container-outer">
+            <div class="header">
+                <div class="title">
+                    <h1 class="header-ethics">Ethics in</h1>
+                    <h1 class="header-biotech">Biotech</h1>
+                </div>
+                <p class="subheading">have you thought about the ways in which biotechnology can be used?</p>
+                <div class="buttons">
+                    <!-- TODO: make sure you look at the video that you texted yourself for the choosing between sections -->
+                    <button id="quiz-button" class="button button-color inner-border">explore <svg style="transform: translateY(3px) translateX(4px);" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg></button><br>
+                    <button id="back-button" class="button button-color inner-border"><svg style="transform: translateY(3px) translateX(-3px);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                      </svg> go back</button><br>
+                </div>
+    
+                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                </svg>
+            </div>
+
+            <div class="container">
+                <div class="spacer"></div>
+
+                <div class="content" id="content">
+                    <h1 class="content-heading"><span class="highlight" id="highlight-1">What</span> is Biotech?</h1>
+                    <img class="img-right" src="../Assets/petri-dish.jpg" />
+                    <p>
+                        Very basically, biotechnology is the process of using biological processes to our benefit. This includes things like antibiotics, hormones, genetic modification - in short, it’s a very broad category. [encyclopedia britannica entry for biotech] It’s also a very old category, having been used in some form for as long as 10 000 years, starting in early agrarian communities, primarily in fermentation for food products like bread, beer, cheese, and vinegar. [encyclopedia britannica entry for biotech] However, the cultural conception of the word “biotechnology” is very different from the true definition, and that’s what I’m mostly going to focus on, since that’s where ethical issues begin to arise. The cultural idea of biotechnology emerged in the 1960s and ‘70s, encompassing a series of newer methods and strategies that were beginning to see use at the time, such as the use of recombinant DNA proteins and monoclonal antibodies.[Evans et al. - The Evolution of Biotechnology and its Impact on Health Care] This field has evolved rapidly over time, growing to encompass a whole range of techniques, treatments, and technologies which continue to be used and developed today.
+                    </p>
+
+                    <h1 class="content-heading"><span class="highlight" id="highlight-2">Why</span> does this matter?</h1>
+                    <p>
+                        Biotechnology is a rapidly growing industry, and has implications that reach deep into the fabric of our lives. Into how we live and care for each other, through healthcare; into how and what we eat, through agriculture; and even into how we interact with technology and the world around us, through bioinformatics. [Biotechnology Market Size & Growth Trends Report, 2030] Given this wide reach, this is also an industry that requires quite a lot of ethical scrutiny. As this industry grows, it is ripe for exploitation, abuse, and simple mistakes, which should be avoided wherever possible. To that end, ethical analysis of these emerging technologies is crucial to keeping us all safe and allowing these new technologies to prosper and work effectively.
+                    </p>
+
+                    <h1 class="content-heading">Want to <span class="highlight" id="highlight-3">learn more?</span></h1>
+                    <img class="img-right" src="../Assets/books.jpg" />
+                    <p>
+                        The resources in the bibliography of this here site, which is referred to like this<sup><a href="../works-cited.html">[1]</a></sup> whenever I use information from a source, has a variety of interesting an useful sources about this topic, which I encourage you to go have a look at if you are interested in anything specific that I mention in this blog. Alternately, for a broader, more general overview of ethics in biotechnology, here are a few resources that I think are very useful.
+                    </p>
+                    <ul>
+                        <li><a href="https://www.encyclopedia.com/science/encyclopedias-almanacs-transcripts-and-maps/biotech-ethics">This excerpt</a> from the <em>Encyclopedia of Science, Technology, and Ethics</em> is a great, if a bit dense, introduction to the subject, being excellently sourced and covering relatively in-depth views of many perspectives towards different concerns about the ethics of biotechnology.</li>
+                    </ul>
+                </div>
+
+                <div class="spacer"></div>
+            </div>
+            
+        </div>
+        <footer>
+            <p>&copy 2022 Luca Donais</p>
+        </footer>
+        
+        <!-- Main script -->
+        <script src="script.js"></script>
+    </body>
+    </body>
+</html>
