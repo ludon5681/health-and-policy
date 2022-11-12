@@ -1,0 +1,313 @@
+/* margin: top right bottom left; */ 
+
+:root {
+    --accent-color: #08A4BD;
+    --accent-color-transluscent: #08a5bd77;
+    --dark: rgb(20, 20, 20);
+    --card-color: rgb(23, 23, 23);
+}
+
+@media only screen and (max-width: 730px) {
+    body .img-right {
+        float: none;
+        margin: auto;
+        margin-top: 20px;
+        display: block;
+        max-width: none;
+        width: 80%;
+    }
+    body .button-color {
+        color: black;
+    }
+}
+@media only screen and (max-width: 774px) {
+    body #highlight-3::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 122px;
+        height: 40px;
+        background-color: var(--accent-color-transluscent);
+        transform: translateY(32px) translateX(-3px);
+    }
+}
+/* styling for options page once screen is too small to display everything smoothly */
+@media only screen and (max-width: 916px) {
+    body .options-title > h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    body #highlight-4::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 240px;
+        height: 50px;
+        background-color: var(--accent-color);
+        transform: translateY(35px) translateX(-10px);
+    }
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+sup {
+    font-size: 0.7rem;
+}
+
+.highlight {
+    position: relative;
+    isolation: isolate;
+}
+/* highlights */
+    #highlight-1::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 130px;
+        height: 40px;
+        background-color: var(--accent-color-transluscent);
+        transform: translateY(32px) translateX(-3px);
+    }
+    #highlight-2::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 112px;
+        height: 40px;
+        background-color: var(--accent-color-transluscent);
+        transform: translateY(32px) translateX(-3px);
+    }
+    #highlight-3::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 237px;
+        height: 40px;
+        background-color: var(--accent-color-transluscent);
+        transform: translateY(32px) translateX(-3px);
+    }
+    #highlight-4::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 538px;
+        height: 50px;
+        background-color: var(--accent-color);
+        transform: translateY(35px) translateX(-10px);
+    }
+    #highlight-5::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 220px;
+        height: 43px;
+        background-color: var(--accent-color-transluscent);
+        transform: translateY(34px) translateX(-4px);
+    }
+
+
+/* styling for header and elements within it */
+.header {
+    text-align: center;
+    padding: 17vh 8vh 17vh 8vh;
+    background-color: var(--dark);
+    max-width: 100vw;
+    overflow-x: hidden;
+
+    /* text styling */
+    color: white;    
+}
+.arrow {
+    margin-top: 4vh;
+    transition: transform 300ms;
+}
+.arrow:hover {
+    transform: translateY(8px);
+}
+.title {
+    font-size: 6vh;
+    font-family: 'Teko', sans-serif;
+    line-height: 4vh;
+    margin-bottom: -2vh;
+}
+    /* moving title text */
+    .header-ethics {
+        transform: translateX(-4%);
+    }
+    .header-biotech {
+        transform: translateX(3.5%);
+    }
+.subheading {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.2rem;
+}
+.button {
+    padding: 9px 16px 9px 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    transition: color 300ms;
+    transition: background-color 300ms;
+    
+    font-size: 1rem;
+    font-family: 'Manrope', sans-serif;
+}
+.button-color {
+    background-color: var(--accent-color);
+}
+.button:hover {
+    color: white;
+    background-color: var(--dark);
+    box-shadow: inset 0px 0px 0px 1px white;
+    box-sizing: border-box; 
+}
+#quiz-button {
+    margin-bottom: 0;
+    padding: 9px 18px 9px 18px;
+}
+
+/* main page content styling */
+.container {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+h1.content-heading {
+    font-family: 'Teko', sans-serif;
+    font-size: 4rem;
+    margin-bottom: -2vh;
+}
+
+.content > p {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+ul > li {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+.img-right {
+    margin: 30px 20px 10px 20px;
+    float: right;
+    border-style: none;
+    border-radius: 5px;
+    max-width: 30%
+}
+
+/* footer styling */
+footer {
+    height: 12vh;
+    background-color: var(--dark);
+    color: white;
+    text-align: center;
+    margin-top: 20vh;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 12vh;
+}
+
+/* options page-specific styling */
+.outer-wrapper {
+    background-color: var(--dark);
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+}
+.outer-wrapper > h1 {
+    margin: 0;
+}
+#options-header {
+    padding: 10vh 8vh 5vh 8vh;
+}
+#options-title > h1 {
+    line-height: 100px;
+    margin: 0;
+    margin-bottom: 3vh;
+}
+
+/* cards styling */
+.cards-wrapper {
+    align-items: center;
+    background-color: var(--dark);
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;  
+    max-width: 916px;
+    width: calc(100% - 20px);
+}
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    height: 260px;
+    flex-direction: column;
+    position: relative;
+    width: 300px;
+}
+.card-content {
+    background-color: var(--card-color);
+    border-radius: inherit;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    inset: 1px;
+    padding: 20px;
+    position: absolute;
+    z-index: 2;
+}
+#cards:hover > .card::after {
+    opacity: 1;
+}
+.card:hover::before {
+    opacity: 1;
+}
+.card::before,
+.card::after {
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    left: 0px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    transition: opacity 500ms;
+    width: 100%;
+}
+.card::before {
+    background: radial-gradient(
+        800px circle at var(--mouse-x) var(--mouse-y), 
+        rgba(255, 255, 255, 0.06),
+        transparent 40%
+    );
+    z-index: 3;
+}
+.card::after {  
+    background: radial-gradient(
+        600px circle at var(--mouse-x) var(--mouse-y), 
+        rgba(255, 255, 255, 0.4),
+        transparent 40%
+    );
+    z-index: 1;
+}
+
+/* additional card styling */
+.card-content > h1 {
+    font-family: 'Roboto', sans-serif;
+    margin: 5px 0 1vh 0;
+}
+.card-content p {
+    font-family: 'Manrope', sans-serif;
+    margin: 0 0 1vh 0;
+}

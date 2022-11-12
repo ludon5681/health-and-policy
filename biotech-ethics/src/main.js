@@ -5,6 +5,10 @@ $(function() {
         instance.scroll($("#content"), 1000, "easeInOutCubic");
     })
 
+    // header buttons
+    $("#quiz-button").on("click", () => {
+        window.location = "./options.html";
+    })
     $("#back-button").on("click", () => {
         window.location = "../index.html";
     })

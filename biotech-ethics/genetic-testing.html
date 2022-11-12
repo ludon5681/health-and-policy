@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Favicon.ico -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../Assets/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../Assets/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../Assets/favicon/favicon-16x16.png">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+        <!-- Main styling -->
+        <link rel="stylesheet" href="./src/style.css">
+
+        <!-- jQuery -->
+        <script src="../libraries/jquery-3.6.1.min.js"></script>
+
+        <!-- Jquery UI -->
+        <link rel="stylesheet" href="../libraries/jqueryUI/jquery-ui.min.css">
+        <script src="../libraries/jqueryUI/jquery-ui.min.js"></script>
+
+        <!-- OverlayScrollbars -->
+        <link rel="stylesheet" href="../libraries/OverlayScrollbars Source/OverlayScrollbars.min.css">
+        <script src="../libraries/OverlayScrollbars Source/jquery.overlayScrollbars.min.js"></script>
+
+        <title>Ethics in Biotechnology</title>
+    </head>
+    <body>
+        <div class="container-outer">
+            <div class="header">
+                <div class="title">
+                    <h1 class="header-ethics">Genetic</h1>
+                    <h1 class="header-biotech">Testing</h1>
+                </div>
+                <p class="subheading" style="margin-bottom: 5vh;">or: the police don't need your consent to get a hold of significant<br>identifiable genetic information about you</p>
+                <div class="buttons">
+                    <button id="back-button" class="button button-color inner-border"><svg style="transform: translateY(3px) translateX(-3px);" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                      </svg> go back</button><br>
+                </div>
+    
+                <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                </svg>
+            </div>
+
+            <div class="container">
+                <div class="spacer"></div>
+
+                <div class="content" id="content">
+                    <h1 class="content-heading"><span class="highlight" id="highlight-1">What</span> is it?</h1>
+                    <img class="img-right" src="../Assets/23andMe.png" />
+                    <p>
+                        Direct-to-consumer genetic testing has been a rapidly growing industry for several years now. [Company Facts | Ancestry Corporate] These tests involve a company, such as 23andMe or Ancestry DNA, sending a “kit” to a consumer, with which the consumer collects a genetic sample from themselves and sends the sample back to the company, which then analyzes that information and sends the user a report of some sort about their genetic information. These companies, in slick and impressive marketing campaigns, advertise themselves as a way to reconnect with your history, your ancestors, and even discover living relatives. [ancestrydna ad page] These all seem like very good things - however, since I decided to put it here, there must be something wrong with it. So what kind of ethical issues arise when companies have access to millions of peoples’ entire genomes? Oh, wait. I get it now.
+                    </p>
+
+                    <img src="../Assets/ancestry_marketing.png" style="max-width: 80%; margin: auto; display: block;" />
+
+                    <h1 class="content-heading">What's the <span class="highlight" id="highlight-5">problem?</span></h1>
+                    <p>
+                        The main problem that I’d like to focus on is privacy. Privacy is, of course, a very important concern when people’s entire genomes - highly identifiable and unchangeable information - are in question; and in this sense, commercial genetic testing is probably even worse than you would imagine. Your genetic information is permanent identifying information about you - unlike, for instance, a credit card number, which can be changed if it ever gets out. In the wrong (or right, depending on your point of view) hands, your genome could be used to establish paternity of a child, accuse someone of a crime, prove genealogical connections, or even reveal private medical conditions. [NYT: Stalking strangers’ DNA to fill in the family tree] However, this issue only scratches the surface. There’s an argument to be made that if an individual decides they want to share such information about themselves and it doesn’t affect anyone else, they should be allowed to do that. But it doesn’t only affect them.
+                    </p>
+
+                    <h1 class="content-heading">The Golden State Killer Case</h1>
+                    <p>
+                        From 1975 to 1986, a string of burglaries, sexual assaults, and murders was committed across California. These crimes were attributed to a mysterious “Golden State Killer,” who, after 1986, went quiet - the crimes stopped. Despite years of searching by the authorities, nothing came up. Then, in 2018, law enforcement announced that they had caught the Golden State Killer - and in June of 2020, Joseph DeAngelo pleaded guilty to the crimes. About a month later, he was convicted and sentenced to life in prison without the possibility of parole. [ABC golden state killer article] However, Joseph DeAngelo had never taken a commercial DNA test, and he wasn’t named in the American law enforcement DNA database, called CODIS, until after he was already a suspect. So how was he captured?
+                        <br><br>
+                        Enter GEDmatch, an online service which allows people to upload their raw DNA test results from another provider (such as 23andMe or AncestryDNA) to be analyzed against GEDmatch’s database in order to find relatives. [gedmatch homepage] 23andMe and AncestryDNA both have extensive privacy policies limiting what can be done with their data - and they do not allow law enforcement to search their databases. However, GEDmatch, at the time, had no such restrictions in their terms of service. [veritaseum video] Again, though, DeAngelo had never taken such a test, so he wouldn’t have been in the GEDmatch database either. Instead, investigators were betting that among the 1.8 million people in the GEDmatch database would be a relative of DeAngelo’s. [PBS genetic genealogy article] This is based on the basic principle that we are all related, if you go back far enough; if you have DNA results of a third cousin of the DNA recovered from a crime scene, then you will be able to trace the family tree back to a common great-great grandparent. If you have a second cousin, a great-grandparent. This will leave you with a long list of possible people who might be suspects, and from there, you can use information that you already have about a suspect and traditional investigation techniques to narrow down the list until you have a manageable number of people from whom to take DNA to confirm your results. 
+                        <br><br>
+                        In this way, your genetic material is not only identifying information about you, but also about hundreds, perhaps over a thousand of your current and future relatives. Publicly sharing your genetic information illuminates information not only about you, but also about many relatives that you may never even meet. 
+                    </p>
+
+                    <h1 class="content-heading">Ethical Frameworks</h1>
+                </div>
+
+                <div class="spacer"></div>
+            </div>
+            
+        </div>
+        <footer>
+            <p>&copy 2022 Luca Donais</p>
+        </footer>
+        
+        <!-- Main script -->
+        <script>
+            var instance = $("body").overlayScrollbars({ }).overlayScrollbars();
+
+            $(".arrow").on("click", function() {
+                instance.scroll($("#content"), 1000, "easeInOutCubic");
+            })
+            $("#back-button").on("click", () => {
+                window.location = "./options.html";
+            })
+        </script>
+    </body>
+    </body>
+</html>
