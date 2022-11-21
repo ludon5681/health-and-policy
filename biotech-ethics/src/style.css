@@ -8,16 +8,22 @@
 }
 
 @media only screen and (max-width: 730px) {
-    body .img-right {
+    body .img-right, body .img-left {
         float: none;
         margin: auto;
         margin-top: 20px;
+        margin-bottom: 20px;
         display: block;
         max-width: none;
         width: 80%;
     }
     body .button-color {
         color: black;
+    }
+    body #eugenics-image {
+        width: 85%; 
+        margin: auto; 
+        display: block;
     }
 }
 @media only screen and (max-width: 774px) {
@@ -54,6 +60,21 @@ body {
 }
 sup {
     font-size: 0.7rem;
+}
+blockquote {
+    border-left: solid 8px var(--accent-color-transluscent);
+    padding: 20px;
+
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.2rem;
+}
+.figure {
+    display: inline;
+}
+figure {
+    display: flex;
+    flex-direction: column;
 }
 
 .highlight {
@@ -92,7 +113,7 @@ sup {
         content: "";
         position: absolute;
         z-index: -1;
-        width: 538px;
+        width: 512px;
         height: 50px;
         background-color: var(--accent-color);
         transform: translateY(35px) translateX(-10px);
@@ -106,7 +127,33 @@ sup {
         background-color: var(--accent-color-transluscent);
         transform: translateY(34px) translateX(-4px);
     }
-
+    #highlight-6::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 165px;
+        height: 43px;
+        background-color: var(--accent-color-transluscent);
+        transform: translateY(30px) translateX(-4px);
+    }
+    #highlight-7::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 172px;
+        height: 43px;
+        background-color: var(--accent-color-transluscent);
+        transform: translateY(30px) translateX(-4px);
+    }
+    #highlight-9::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 108px;
+        height: 40px;
+        background-color: var(--accent-color-transluscent);
+        transform: translateY(30px) translateX(-4px);
+    }
 
 /* styling for header and elements within it */
 .header {
@@ -127,9 +174,9 @@ sup {
     transform: translateY(8px);
 }
 .title {
-    font-size: 6vh;
+    font-size: 43px;
     font-family: 'Teko', sans-serif;
-    line-height: 4vh;
+    line-height: 29px;
     margin-bottom: -2vh;
 }
     /* moving title text */
@@ -196,6 +243,13 @@ ul > li {
     border-radius: 5px;
     max-width: 30%
 }
+.img-left {
+    margin: 10px 20px 10px 20px;
+    float: left;
+    border-style: none;
+    border-radius: 5px;
+    max-width: 25%;
+}
 
 /* footer styling */
 footer {
@@ -211,11 +265,8 @@ footer {
 }
 
 /* options page-specific styling */
-.outer-wrapper {
+.options-body {
     background-color: var(--dark);
-    height: 100vh;
-    overflow: hidden;
-    color: white;
 }
 .outer-wrapper > h1 {
     margin: 0;
@@ -243,7 +294,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;  
-    max-width: 916px;
+    max-width: 608px;
     width: calc(100% - 20px);
 }
 .card {
@@ -310,4 +361,10 @@ footer {
 .card-content p {
     font-family: 'Manrope', sans-serif;
     margin: 0 0 1vh 0;
+}
+
+#eugenics-image {
+    width: 50%; 
+    margin: auto; 
+    display: block;
 }
