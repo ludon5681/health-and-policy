@@ -45,3 +45,12 @@ figcaption {
 .not-visible {
     display: none;
 }
+
+blockquote {
+    border-left: solid 6px #7b7b7b;
+    padding: 20px;
+    margin-left: 15px !important;
+
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
