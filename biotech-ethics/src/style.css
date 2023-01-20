@@ -7,6 +7,10 @@
     --card-color: rgb(23, 23, 23);
 }
 
+*::selection {
+    background-color: rgba(190, 220, 227, 0.6);
+}
+
 @media only screen and (max-width: 730px) {
     body .img-right, body .img-left {
         float: none;

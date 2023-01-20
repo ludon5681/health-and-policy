@@ -2,6 +2,10 @@
     max-width: 100vw !important;
 }
 
+*::selection {
+    background-color: rgba(190, 220, 227, 0.6);
+}
+
 .nav-link {
     line-height: 6vh !important;
 }
